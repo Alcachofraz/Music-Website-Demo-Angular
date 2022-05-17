@@ -1,6 +1,8 @@
 # Music Website Demo Angular
 
-This is a website made in Angular. It was built by following [this](https://2122moodle.isel.pt/pluginfile.php/1159337/mod_resource/content/0/4%C2%BATutorial.pdf) tutorial.
+This is a website made in Angular. It was built by following [this](https://2122moodle.isel.pt/pluginfile.php/1159337/mod_resource/content/0/4%C2%BATutorial.pdf) tutorial.  
+  
+Use '''ng serve --o''' at project root to run in localhost.
 
 ![image](https://user-images.githubusercontent.com/75852333/168808472-e4207b87-1395-445d-ac44-52cc9f53d09d.png)
 
