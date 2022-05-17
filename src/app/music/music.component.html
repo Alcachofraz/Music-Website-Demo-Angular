@@ -1,0 +1,19 @@
+<h2>My Music</h2>
+<div>
+    <label>Song name:
+        <input #songName />
+    </label>
+    <label>Song url:
+        <input #songUrl />
+    </label>
+    <button (click)="add(songName.value, songUrl.value);songName.value='';songUrl.value='';">Add song</button>
+</div>
+<ul class="movies">
+    <li *ngFor="let song of music">
+        <a routerLink="/detail/{{song.id}}">
+            <span class="badge">{{song.id}}</span>
+            {{song.name}}
+        </a>
+        <button class="delete" title="Delete song" (click)="delete(song)">x</button>
+    </li>
+</ul>

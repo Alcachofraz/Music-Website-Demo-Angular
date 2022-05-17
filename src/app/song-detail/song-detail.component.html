@@ -1,0 +1,22 @@
+<div>
+    <button (click)="goBack()">Go back</button>
+    <button (click)="save()">Save</button>
+</div>
+<div *ngIf="song">
+    <h2>{{song.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{song.id}}</div>
+    <div>
+        <label>Name:
+            <input [(ngModel)]="song.name" placeholder="name" />
+        </label>
+    </div>
+    <div>
+        <label>URL:
+            <input [(ngModel)]="song.url" placeholder="URL" />
+        </label>
+    </div>
+    <div>
+        <iframe [src]='sanitizer.bypassSecurityTrustResourceUrl(song.url)' width="560" height="315" frameborder="0"
+            webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+</div>
